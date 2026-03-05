@@ -10,10 +10,10 @@ public class SecondFunc {
         printEvenNumber(numbers);
     }
 
-    public static boolean isEven(int num){
-
-        return num%2==0;
-    }
+//    public static boolean isEven(int num){
+//
+//        return num%2==0;
+//    }
 
     private static void printEvenNumber(List<Integer> numbers) {
 
@@ -23,8 +23,12 @@ public class SecondFunc {
 //            }
 //        }
 //Functional Programming flow
-       numbers.stream()
-               .filter(SecondFunc::isEven) //filter to get only even number
-               .forEach(System.out::println);
+//       numbers.stream()
+//               .filter(SecondFunc::isEven) //filter to get only even number
+//               .forEach(System.out::println);
+
+        numbers.stream()
+                .filter(n->n%2==0) //filter to get only even number
+                .forEach(System.out::println);
     }
 }
