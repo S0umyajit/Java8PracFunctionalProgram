@@ -8,9 +8,8 @@ public class SumOfListFunc {
         List<Integer> nums= List.of(1,2,3,4,5,6);
 
         int sum=addListFunc(nums);
-        System.out.println(sum);
+        System.out.println("List of distinct Num: "+ sum);
     }
-
     private static int sum(int a, int b){
         return a+b;
     }
